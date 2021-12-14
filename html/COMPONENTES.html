@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>COMPONENTES DOM</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../img/ocho.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/fancybox/fancybox.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <link rel="prefetch" href="../img/zoom.png">
+
+  <!-- =======================================================
+    Template Name: Munter
+    Template URL: https://templatemag.com/munter-bootstrap-one-page-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body data-spy="scroll" data-offset="58" data-target="#navigation">
+
+  <!-- Fixed navbar -->
+  <div id="navigation" class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav ">
+
+          <li class="active" style="padding-top: 4%;"><span><a href="../index.html"><i class="fa fa-home"
+                  style="font-size: 45px;"></i></a></span></li>
+          <li> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </li>
+          <li class="active dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Componentes <b class="caret"></b></a>
+            <ul class="dropdown-menu" style="background-color: grey; border-radius: 5%;">
+              <li class="dropdown-item"><a href="#about-us" class="smoothscroll">Componentes DOM HTML</a></li>
+              <li class="dropdown-item"><a href="#process" class="smoothscroll">Métodos para componentes DOM HTML
+                </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <!-- === MAIN Background === -->
+  <div class="slide story" id="introduccion" data-slide="1">
+    <div class="container">
+      <div id="home-row-1" class="row clearfix">
+        <div class="row title-row">
+          <br>
+          <div class="col-12 font-thin"> <span class="font-semibold">JS HTML DOM: Componentes HTML DOM</span> </div>
+        </div>
+        <!-- /row -->
+        <div class="row line-row">
+          <div class="hr">&nbsp;</div>
+        </div>
+        <!-- /row -->
+        <div class="row subtitle-row">
+          <div class="col-12 font-thin">JavaScript con DOM,
+            <span class="font-semibold">es capaz de manipular componentes HTML.</span>
+          </div>
+        </div>
+        <!-- /col-12 -->
+      </div>
+      <!-- /row -->
+      <div id="home-row-2" class="row clearfix">
+
+        <div class="col-12 col-sm-4">
+          <a href="#portfolio" class="smoothscroll navigation-slide-a">
+        </div>
+
+        <div class="col-12 col-sm-4">
+          <a href="#about-us" class="smoothscroll navigation-slide-a">
+            <div class="home-hover navigation-slide"><img src="../img/flecha.png" style="height: 80px; width: 80px;">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-4">
+          <a href="#clients" class="smoothscroll navigation-slide-a">
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /slide1 -->
+
+  <div class="slide story" id="contact" data-slide="2">
+    <div class="container">
+      <section id="header">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="header-content-left">
+                <h1 class="display-6">En componentes se puede hablar en respecto a documentos y a formularios</h1>
+                <br>
+                <div class="row line-row">
+                  <div class="hr">&nbsp;&nbsp;</div>
+                </div>
+                <!-- /row -->
+                <br><br>
+                <h3 class="mt-5">Respecto a formularios, DOM puede trabajar con los componentes principales que son:
+                </h3>
+                <br>
+                <div align="left">
+                  <li>imput</li>
+                  <li>select</li>
+                  <li>TextArea</li>
+                  <li>Checkbox</li>
+                  <li>Radio</li>
+                  <li>Entre otros</li>
+                </div>
+                <br><br>
+                <a href="#process" class="btn btn-outline-secondary header-btn btn-lg mt-2">Leer Más</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="header-content-right">
+                <img src="../img/metod.png" style="width: 70%;margin-left: 30%; margin-top: 10%;" class="thumbnail">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  
+  <!-- /slide2 -->
+
+  <!-- === SLide 3 - Portfolio -->
+  <div class="slide story" id="process" data-slide="4">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Validación de formulario JavaScript</div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <br>
+      <table class="table table-bordered">
+        <th class="mb-0 blockquote text-center"><em>
+            <h4>function validateForm() {<br>
+              let x = document.forms["myForm"]["fname"].value;<br>
+              if (x == "") {<br>
+                alert("Name must be filled out");<br>
+                return false;<br>
+              }<br>
+            }</h4>
+          </em></th>
+      </table>
+      <h3 align="left" class="font-thin "> La funcion se llama cuando se envie el formulario</h3>
+
+      <h3 class="font-thin "> Ejemplo</h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead>
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-primary bg-info"><strong>
+              < !DOCTYPE html><br>
+              < html><br>
+              < head><br><br>
+              < script><br>
+              function validateForm() {<br>
+                let x = document.forms["myForm"]["fname"].value;<br>
+                if (x == "") {<br>
+                  alert("El nombre debe llenarse");<br>
+                  return false;<br>
+                }<br>
+              }<br>
+              < /script><br><br>
+              < /head><br>
+              < body><br>
+              
+              < h2>JavaScript Validation< /h2><br><br>
+              
+              < form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"><br>
+                Name: < input type="text" name="fname"><br>
+                < input type="submit" value="Enviar"><br>
+              < /form><br><br>
+              
+              < /body><br>
+              < /html><br>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    
+      <!-- /row -->
+      <br>
+      <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+      <br>
+    <div class="">
+        <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemCOMP1.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+    </div>
+    
+    </div>
+  </div>
+  
+  <div class="slide story" id="clients" data-slide="2">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Validacion automatica <span class="font-semibold">de formularios HTML</span>
+        </div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <br><br>
+      <table class="table table-bordered">
+        <th class="mb-0 blockquote text-center"><em>
+            <h4>function validateForm() {<br>
+              let x = document.forms["myForm"]["fname"].value;<br>
+              if (x == "") {<br>
+                alert("El nombre debe llenarse");<br>
+                return false;<br>
+              }<br>
+            }</h4>
+          </em></th>
+      </table>
+      <h3 align="left" class="font-thin "> La funcion se llama cuando se envie el formulario</h3>
+
+      <h3 class="font-thin "> Ejemplo</h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead>
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-primary bg-info"><strong>
+              < !DOCTYPE html><br>
+              < html><br>
+              < body><br>
+
+              < h2>JavaScript Validation< /h2><br><br>
+
+              < form action="/action_page.php" method="post"><br>
+                < input type="text" name="fname" required><br>
+                < input type="submit" value="Enviar"><br>
+              < /form><br><br>
+
+              < p>Si hace clic en enviar, sin completar el campo de texto,
+                  su navegador mostrará un mensaje de error.< /p><br><br>
+
+              < /body><br>
+              < /html><br>
+
+          </em>
+        </th>
+      </table>
+    
+      <!-- /row -->
+      <br>
+      <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+      <br>
+    <div class="">
+        <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemCOMP2.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+    </div>
+    </div>
+      <!-- /row -->
+    </div>
+  </div>
+
+  <!-- === Slide 2 === -->
+  <div class="slide story" id="about-us" data-slide="2">
+    <div class="container">
+      <section id="header">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="header-content-left">
+                <h1 class="display-6">Componentes en Documentos DOM HTML</h1>
+                <br>
+                <div class="row line-row">
+                  <div class="hr">&nbsp;&nbsp;</div>
+                </div>
+                <!-- /row -->
+                <br><br>
+                <h3 class="mt-5">Respecto a Documentos, DOM puede trabajar con los componentes principales que son:
+                </h3>
+                <br>
+                <div align="left">
+                  <p>El objeto de documento representa su página web.</p>
+                  <p>Si desea acceder a cualquier elemento de una página HTML, siempre comience por acceder al objeto del documento</p>
+                </div>
+                <br><br>
+                <a href="#process" class="btn btn-outline-secondary header-btn btn-lg mt-2">Leer Más</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="header-content-right">
+                <img src="../img/metod.png" style="width: 70%;margin-left: 30%; margin-top: 10%;" class="thumbnail">
+              </div>              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+    <!-- === Slide 2 === -->
+    <div class="slide story" id="process" data-slide="2">
+      <div class="container">
+        <section id="header">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="header-content-left">
+                  <h1 class="display-6">Encontrar elementos HTML</h1>
+                  <br>
+                  <div class="row line-row">
+                    <div class="hr">&nbsp;&nbsp;</div>
+                  </div>
+                  <!-- /row -->
+                  <br><br>
+                  <h3 class="mt-5">Respecto a Documentos, DOM puede trabajar con los componentes principales que son:
+                  </h3>
+                  <br>
+                  <table class="table table-condensed table-bordered table-dark" style="width:100%">
+                    <thead class="table-light table-active">
+                        <tr>
+                            <th>
+                                <h3>Metodo</h3>
+                            </th>
+                            <th>
+                                <h3>Descripcion</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>document.getElementById(id)</td>
+                            <td>Encontrar un elemento por su ID</td>
+                        </tr>
+                        <tr>
+                            <td>document.getElementsByTagName(name)</td>
+                            <td>Encontrar un elemento por nombre de etiqueta</td>
+                        </tr>
+                        <tr>
+                            <td>document.getElementsByClassName(name)</td>
+                            <td>Encontrar un elemento por nombre de clase</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                  <br><br>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">             
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="slide story" id="contact" data-slide="2">
+      <div class="container">
+        <section id="header">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="header-content-left">
+                  <h1 class="display-6">Cambiar elementos HTML</h1>
+                  <br>
+                  <div class="row line-row">
+                    <div class="hr">&nbsp;&nbsp;</div>
+                  </div>
+                  <!-- /row -->
+                  <br><br>
+                  <br>
+                  <table class="table table-condensed table-bordered table-dark" style="width:100%">
+                    <thead class="table-light table-active">
+                        <tr>
+                            <th>
+                                <h3>Propiedad</h3>
+                            </th>
+                            <th>
+                                <h3>Descripcion</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>element.innerHTML =  new html content</td>
+                            <td>Cambiar el HTML interno de un elemento</td>
+                        </tr>
+                        <tr>
+                            <td>element.attribute = new value</td>
+                            <td>Cambiar el valor del atributo de un elemento HTML</td>
+                        </tr>
+                        <tr>
+                            <td>element.style.property = new style</td>
+                            <td>Cambiar el estilo de un elemento HTML</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                  <br><br>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">             
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="slide story" id="clients" data-slide="2">
+      <div class="container">
+        <section id="header">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="header-content-left">
+                  <h1 class="display-6">Agregar y eliminar elementos HTML</h1>
+                  <br>
+                  <div class="row line-row">
+                    <div class="hr">&nbsp;&nbsp;</div>
+                  </div>
+                  <!-- /row -->
+                  <br><br>
+                  <br>
+                  <table class="table table-condensed table-bordered table-dark" style="width:100%">
+                    <thead class="table-light table-active">
+                        <tr>
+                            <th>
+                                <h3>Metodo</h3>
+                            </th>
+                            <th>
+                                <h3>Descripcion</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>document.createElement(element)</td>
+                            <td>Crear un nuevo elemento HTML</td>
+                        </tr>
+                        <tr>
+                            <td>document.removeChild(element)</td>
+                            <td>Remover un elemento HTML</td>
+                        </tr>
+                        <tr>
+                            <td>document.appendChild(element)</td>
+                            <td>Añadir y remplazar un elemento HTML</td>
+                        </tr>
+                        <tr>
+                          <td>document.replaceChild(new, old)</td>
+                          <td>Remplazar un elemento HTML</td>
+                        </tr>
+                        <tr>
+                          <td>document.write(text)</td>
+                          <td>Escribir en el flujo de salida HTML</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                  <br><br>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">             
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  
+
+  <div id="copyrights">
+    <div class="container">
+    <p>
+      &copy; Grupo 8 <br><strong>Aplicaciones de Tecnologias Web</strong>.
+    </p>
+    <div class="credits">
+    <!--
+      You are NOT allowed to delete the credit link to TemplateMag with free version.
+      You can delete the credit link only if you bought the pro version.
+      Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/munter-bootstrap-one-page-template/
+      Licensing information: https://templatemag.com/license/
+        -->
+      Tarea 1 - Segundo Parcial
+    </div>
+  </div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/php-mail-form/validate.js"></script>
+  <script src="../lib/fancybox/fancybox.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

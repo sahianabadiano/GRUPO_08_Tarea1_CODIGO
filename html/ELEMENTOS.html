@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ELEMENTOS DOM</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../img/ocho.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/fancybox/fancybox.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <link rel="prefetch" href="../img/zoom.png">
+
+  <!-- =======================================================
+    Template Name: Munter
+    Template URL: https://templatemag.com/munter-bootstrap-one-page-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body data-spy="scroll" data-offset="58" data-target="#navigation">
+
+  <!-- Fixed navbar -->
+  <div id="navigation" class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav ">
+
+          <li class="active" style="padding-top: 4%;"><span><a href="../index.html"><i class="fa fa-home"
+                  style="font-size: 45px;"></i></a></span></li>
+          <li> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </li>
+          <li class="active dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Elementos <b class="caret"></b></a>
+            <ul class="dropdown-menu" style="background-color: grey; border-radius: 5%;">
+              <li class="dropdown-item"><a href="#about-us" class="smoothscroll">Elementos DOM HTML</a></li>
+              <li class="dropdown-item"><a href="#process" class="smoothscroll">Métodos para encontrar elementos HTML con ejemplos
+                </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <!-- === MAIN Background === -->
+  <div class="slide story" id="introduccion" data-slide="1">
+    <div class="container">
+      <div id="home-row-1" class="row clearfix">
+        <div class="row title-row">
+          <br>
+          <div class="col-12 font-thin"> <span class="font-semibold">JS HTML DOM: Elementos HTML DOM</span> </div>
+        </div>
+        <!-- /row -->
+        <div class="row line-row">
+          <div class="hr">&nbsp;</div>
+        </div>
+        <!-- /row -->
+        <div class="row subtitle-row">
+          <div class="col-12 font-thin">A menudo, con JavaScript,
+            <span class="font-semibold">desea manipular elementos HTML.</span>
+          </div>
+        </div>
+        <!-- /col-12 -->
+      </div>
+      <!-- /row -->
+      <div id="home-row-2" class="row clearfix">
+
+        <div class="col-12 col-sm-4">
+          <a href="#portfolio" class="smoothscroll navigation-slide-a">
+        </div>
+
+        <div class="col-12 col-sm-4">
+          <a href="#about-us" class="smoothscroll navigation-slide-a">
+            <div class="home-hover navigation-slide"><img src="../img/flecha.png" style="height: 80px; width: 80px;">
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-4">
+          <a href="#clients" class="smoothscroll navigation-slide-a">
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /slide1 -->
+
+
+  <!-- === Slide 2 === -->
+  <div class="slide story" id="about-us" data-slide="2">
+    <div class="container">
+      <section id="header">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="header-content-left">
+                <h1 class="display-6">Elementos DOM HTML</h1>
+                <br>
+                <div class="row line-row">
+                  <div class="hr">&nbsp;&nbsp;</div>
+                </div>
+                <!-- /row -->
+                <br><br>
+                <h3 class="mt-5">Para hacerlo, primero debes encontrar los elementos. Hay varias maneras de hacer esto:
+                </h3>
+                <br>
+                <div align="left">
+                  <li>Encontrar elementos HTML por ID</li>
+                  <li>Encontrar elementos HTML por nombre de etiqueta</li>
+                  <li>Encontrar elementos HTML por nombre de clase</li>
+                  <li>Encontrar elementos HTML mediante selectores CSS</li>
+                  <li>Encontrar elementos HTML por colecciones de objetos HTML</li>
+
+                </div>
+                <br><br>
+                <a href="#process" class="btn btn-outline-secondary header-btn btn-lg mt-2">Leer Más</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="header-content-right">
+                <img src="../img/metod.png" style="width: 70%;margin-left: 30%; margin-top: 10%;" class="thumbnail">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- /slide2 -->
+
+  <!-- === SLide 3 - Portfolio -->
+  <div class="slide story" id="process" data-slide="4">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Encontrar elemento HTML <span class="font-semibold">por ID</span></div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <br>
+      <table class="table table-bordered">
+        <th class="mb-0 blockquote text-center"><em>
+            <h4>const element = document.getElementById("intro");</h4>
+          </em></th>
+      </table>
+      <h3 class="font-thin "> Si se encuentra el elemento, el método devolverá el elemento como un objeto (en
+        myElement).</h3>
+      <h3 class="font-thin ">Si no se encuentra el elemento, myElement contendrá null.</h3>
+
+      <h3 class="font-thin "> Ejemplo</h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead>
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-primary bg-info"><strong>
+                < !DOCTYPE html><br>
+                < html><br>
+
+                < body><br>
+
+                  < h2>JavaScript HTML DOM< /h2><br>
+
+                  < p id="intro">Búsqueda de elementos HTML por ID< /p><br>
+                  < p>Este ejemplo demuestra el método < b>getElementsById< /b>< /p><br>
+
+                  < p id="demo">< /p><br>
+
+                  < script>
+                    const element = document.getElementById("intro");<br>
+
+                    document.getElementById("demo").innerHTML =<br>
+                      "El texto del párrafo de introducción es: " + element.innerHTML;<br>
+
+                  < /script><br>
+
+                < /body><br>
+
+                < /html><br>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- /row -->
+      <br>
+      <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+      <br>
+      <div class="bg-info">
+          <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemELEM1.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="slide story" id="clients" data-slide="2">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Encontrar elementos HTML <span class="font-semibold">por nombre de etiqueta</span>
+        </div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <br><br>
+      <table class="table table-bordered">
+        <th class="mb-0 blockquote text-center"><em>
+            <h4>const element = document.getElementsByTagName("p");</h4>
+          </em></th>
+      </table>
+      <h3 class="font-thin "> Muestra todos los p elementos</h3>
+
+      <h3 class="font-thin "> Ejemplo</h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead>
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-primary bg-info"><strong>
+              < !DOCTYPE html><br>
+              < html><br>
+              < body><br><br>
+              
+              < h2>JavaScript HTML DOM< /h2><br><br>
+              
+              < p>Finding HTML Elements by Tag Name.< /p><br>
+              < p>This example demonstrates the < b>getElementsByTagName< /b> method.< /p><br><br>
+              
+              < p id="demo">< /p><br><br>
+              
+              < script><br>
+              const element = document.getElementsByTagName("p");<br>
+              document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;<br>
+              < /script><br><br>
+              
+              < /body><br>
+              < /html><br>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- /row -->
+      <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+
+      <div class="col-md-12 col-lg-12  ">
+        <div class="bg-info">
+          <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemELEM2.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+      </div>
+      </div>
+      <!-- /row -->
+    </div>
+  </div>
+
+
+  <div class="slide story" id="process" data-slide="2">
+    <div class="container">
+    <div class="row title-row">
+      <div class="col-12 font-thin">Encontrar elementos HTML <span class="font-semibold">por nombre de clase</span>
+      </div>
+    </div>
+    <!-- /row -->
+    <div class="row line-row">
+      <div class="hr">&nbsp;</div>
+    </div>
+    <!-- /row -->
+    <br><br>
+    <table class="table table-bordered">
+      <th class="mb-0 blockquote text-center"><em>
+          <h4>const x = document.getElementsByClassName("intro");</h4>
+        </em></th>
+    </table>
+    <h3 class="font-thin ">Devuelve una lista de todos los elementos con class="intro"</h3>
+
+    <h3 class="font-thin "> Ejemplo</h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead>
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-primary bg-info"><strong>
+              < !DOCTYPE html><br>
+              < html><br>
+              < body><br><br>
+
+              < h2>JavaScript HTML DOM< /h2><br><br>
+
+              < p>Finding HTML Elements by Class Name.< /p><br>
+              < p class="intro">Hello World!< /p><br>
+              < p class="intro">This example demonstrates the < b>getElementsByClassName< /b> method.< /p><br>
+
+              < p id="demo">< /p><br><br>
+
+              < script><br>
+              const x = document.getElementsByClassName("intro");<br>
+              document.getElementById("demo").innerHTML = <br>
+              'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;<br>
+              < /script><br><br>
+
+              < /body><br>
+              < /html><br>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- /row -->
+      <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+
+      <div class="col-md-12 col-lg-12  ">
+      <div class="bg-info">
+          <iframe class="responsive-iframe" width="700px" height="220px" src="ejemplos/ejemELEM3.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide story" id="about-us" data-slide="6">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Encontrar elementos HTML <span class="font-semibold">mediante selectores
+            CSS</span>
+        </div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <br><br>
+      <table class="table table-bordered">
+        <th class="mb-0 blockquote text-center"><em>
+            <h4>const x = document.querySelectorAll("p.intro");</h4>
+          </em></th>
+      </table>
+      <h3 class="font-thin ">Devuelve una lista de todos los "p" elementos con class="intro".</h3>
+
+      <h3>Ejemplo</h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead>
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-primary bg-info"><strong>
+              < !DOCTYPE html><br>
+              < html><br>
+              < body><br><br>
+
+              < h2>JavaScript HTML DOM< /h2><br><br>
+
+              < p>Finding HTML Elements by Query Selector< /p><br>
+              < p class="intro">Hello World!.< /p><br>
+              < p class="intro">This example demonstrates the < b>querySelectorAll< /b> method.< /p><br><br>
+
+              < p id="demo">< /p><br><br>
+
+              < script><br>
+              const x = document.querySelectorAll("p.intro");<br>
+              document.getElementById("demo").innerHTML = <br>
+              'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;<br>
+              < /script><br><br>
+
+              < /body><br>
+              < /html><br>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+
+<!-- /row -->
+      <div class="col-md-12 col-lg-12  ">
+        <div class="bg-info">
+          <iframe class="responsive-iframe" width="700px" height="230px" src="ejemplos/ejemELEM4.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- === Slide 6 / Contact === -->
+
+  <div class="slide story" id="clients" data-slide="2">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Ejemplo elemento HTML</div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+
+      <h3 align="left" class="font-thin ">Este ejemplo busca el elemento de formulario con id="frm1", en la colección de
+        formularios, <span class="font-semibold">y muestra todos los valores del elemento</span> <span
+          class="font-thin"></span></h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead>
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-primary bg-info"><strong>
+                < !DOCTYPE html><br>
+                  < html><br>
+
+                  < body style="background-color: #CDEDF9;"><br><br>
+
+                    < h2>JavaScript HTML DOM< /h2><br>
+                    < p>Finding HTML Elements Using < b>document.forms< /b>.</p><br><br>
+
+                    < form id="frm1" action="/action_page.php"><br>
+                      First name: < input type="text"
+                      name="fname" value="Donald"><br>
+                      Last name: < input type="text" name="lname" value="Duck"><br>
+                      < input type="submit" value="Submit"><br>
+                    < /form><br><br>
+
+                    < p>These are the values of each element in the form:< /p><br><br>
+
+                    < p id="demo">
+                    < /p><br><br>
+
+                    < script><br>
+                      const x = document.forms["frm1"];<br>
+                      let text = "";<br>
+                      for (let i = 0; i < x.length; i++) {<br>
+                        text += x.elements[i].value +;<br>
+                      }<br>
+                      document.getElementById("demo").innerHTML = text;<br>
+                    < /script><br><br>
+
+                  < /body><br>
+                < /html><br>
+
+              </strong>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+
+      <div class="col-md-12 col-lg-12  ">
+        <div class="bg-info">
+          <iframe class="responsive-iframe" width="700px" height="320px" src="ejemplos/ejemELEM5.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+      </div>
+      </div>
+
+    <!-- /row -->
+    </div>
+  <!-- /container -->
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+    <p>
+      &copy; Grupo 8 <br><strong>Aplicaciones de Tecnologias Web</strong>.
+    </p>
+    <div class="credits">
+    <!--
+      You are NOT allowed to delete the credit link to TemplateMag with free version.
+      You can delete the credit link only if you bought the pro version.
+      Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/munter-bootstrap-one-page-template/
+      Licensing information: https://templatemag.com/license/
+        -->
+      Tarea 1 - Segundo Parcial
+    </div>
+  </div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/php-mail-form/validate.js"></script>
+  <script src="../lib/fancybox/fancybox.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

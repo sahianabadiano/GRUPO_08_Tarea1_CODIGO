@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML DOM</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  
+  <link href="../img/ocho.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/fancybox/fancybox.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <link rel="prefetch" href="../img/zoom.png">
+
+  <!-- =======================================================
+    Template Name: Munter
+    Template URL: https://templatemag.com/munter-bootstrap-one-page-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body data-spy="scroll" data-offset="58" data-target="#navigation">
+
+  <!-- Fixed navbar -->
+  <div id="navigation" class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+          
+      </div>
+      <div class="navbar-collapse collapse" >
+        <ul class="nav navbar-nav ">
+         
+          <li class="active" style="padding-top: 4%;"><span><a href="../index.html"><i class="fa fa-home" style="font-size: 45px;"></i></a></span></li>
+          <!--<li class=""><a href="#introduccion" class="smoothscroll"> Inicio</a></li>
+          <li><a href="#" class="smoothscroll">Metodos</a></li>
+          <li><a href="#" class="smoothscroll">Componentes</a></li>
+          <li><a href="#" class="smoothscroll">Elementos</a></li>-->
+          <li>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </li>
+          <li class="active dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown"  href="#">HTML <b class="caret"></b></a>
+            <ul class="dropdown-menu" style="background-color: grey; border-radius: 5%;">
+              <li class="dropdown-item" ><a href="#about-us" class="smoothscroll">Cambio de contenido HTML</a></li>
+              <li class="dropdown-item" ><a href="#process" class="smoothscroll">Cambiar el valor de un atributo</a></li>
+              <li class="dropdown-item" ><a href="#clients" class="smoothscroll">Contenido HTML dinámico</a></li>
+              <li class="dropdown-item" ><a href="#contact" class="smoothscroll">document.write ()</a></li>
+            </ul>
+          </li>
+          <!--<li><a href="./CSSDOM.html" class="#">CSS</a></li>
+          <li><a href="#process" class="smoothscroll">Temas</a></li>
+          <li><a href="#clients" class="smoothscroll">Clients</a></li>
+          <li><a href="#" class="smoothscroll">Contactos</a></li>-->
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <!-- === MAIN Background === -->
+  <div class="slide story" id="introduccion" data-slide="1">
+    <div class="container">
+      <div id="home-row-1" class="row clearfix">
+        <div class="row title-row">
+          <br>
+        <div class="col-12 font-thin"> <span class="font-semibold"> JS HTML DOM: cambio de HTML </span> </div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-12 font-thin"> El DOM HTML permite que JavaScript cambie el contenido de <span class="font-semibold"> los elementos HTML.</span></div>
+      </div>
+        <!-- /col-12 -->
+      </div>
+            
+    </div>
+    <div id="home-row-2" class="row clearfix">
+        <div class="col-12 col-sm-4"></div>
+         <div class="col-12 col-sm-4">
+          <a href="#about-us" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="../img/flecha.png" style="height: 80px; width: 80px;"></div></a>
+        </div> 
+         <div class="col-12 col-sm-4"></div> 
+
+      </div>
+  </div>
+      <!-- /row -->
+      
+
+
+   <!-- === Slide 2 === -->
+  <div class="slide story" id="about-us" data-slide="2">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Cambio de contenido <span class="font-semibold">HTML</span></div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <h3 class="font-thin ">La forma más sencilla de modificar el contenido de un elemento HTML es mediante la <span class="font-semibold">innerHTML</span> <span class="font-thin">propiedad.</span></h3>
+      
+      <h3 align="left" class="col-3 font-thin ">Para cambiar el contenido de un elemento HTML, use esta sintaxis:</h3>
+     
+      <table class="table table-bordered">
+            <th class="mb-0 blockquote text-center"><em><h4>document.getElementById(id).innerHTML = new HTML</h4></em></th>
+      </table>
+
+       <h3 align="left" class="font-thin  ">Este ejemplo cambia el contenido de un <span class="font-semibold">< p ></span> <span class="font-thin">elemento:</span></h3>
+
+      <div class="bg-success">
+         <table class="table  table-bordered table-striped ">
+        <thead >
+          <tr class="table bg-primary">
+            <th scope="col" class="text-primary">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr>
+            <th class="text-primary bg-info"><strong>
+              < html><br>
+              < body><br><br>
+              < h2>JavaScript puede cambiar HTML< /h2><br>
+              < p id="p1">Hello World!< /p><br><br>
+              < script><br>
+              document.getElementById("p1").innerHTML = "New text!";<br>
+              < /script><br><br>
+              < p >El párrafo anterior fue cambiado por el script.< /p><br>
+              < /body><br>
+              < /html></strong>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+        <!-- /col12 -->
+        <br>
+        <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+        <br>
+        <div class="">
+            <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemHTML1.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+        </div>
+        <!-- /col12 -->
+      </div>
+     
+    
+      <!-- /row -->
+     
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /slide2 -->
+
+ <!-- === SLide 3 - Portfolio -->
+  <div class="slide story" id="process" data-slide="4">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Cambiar el valor de un atributo <span class="font-semibold">HTML</span></div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <h3 class="font-thin ">Para cambiar el valor de un atributo HTML, use esta sintaxis:</h3>
+     
+      <table class="table table-bordered">
+            <th class="mb-0 blockquote text-center"><em><h4>document.getElementById(id).attribute = new value</h4></em></th>
+      </table>
+
+       <h3 align="left" class="font-thin ">Este ejemplo cambia el valor del atributo src de un <span class="font-semibold">< img></span> <span class="font-thin">elemento:</span></h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead >
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr>
+            <th class="text-primary bg-info"><strong>
+              < html><br>
+              < body><br><br>
+              < img id="myImage" src="../img/smiley.jpg"><br>
+              < script><br>
+              document.getElementById("myImage").src = "../img/landscape.jpg";<br>
+              < /script><br><br>
+              < p>La imagen original era smiley.jpg, pero el script la cambió a landscape.jpg<  /p> <br>
+              < /body><br>
+              < /html></strong>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+     
+        <br>
+        <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+        <br>
+        <div class="">
+            <iframe class="responsive-iframe" width="700px" height="250px" src="ejemplos/ejemHTML2.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+        </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /slide3 -->
+
+  <!-- === Slide 4 - Process === -->
+ 
+  <!-- /slide4 -->
+
+  <!-- === Slide 5 === -->
+  <div class="slide story" id="clients" data-slide="5">
+     <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Contenido HTML dinámico </div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <h3 align="left" class="font-thin ">JavaScript puede crear contenido HTML dinámico:</h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead >
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr>
+            <th class="text-primary bg-info"><strong>
+              < !DOCTYPE html>><br>
+              < body><br><br>
+              < script><br>
+              document.getElementById("demo").innerHTML = "Date : " + Date();<br>
+              < /script><br><br>
+              < /body><br>
+              < /html></strong>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    
+        <br>
+        <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+        <br>
+        <div class="">
+            <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemHTML3.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+        </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /slide5 -->
+
+  <!-- === Slide 6 / Contact === -->
+  <div class="slide story" id="contact" data-slide="6">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">document.write ()</div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+
+       <h3 align="left" class="font-thin ">En JavaScript, <span class="font-semibold">document.write()</span> <span class="font-thin">se puede utilizar para escribir directamente en el flujo de salida HTML:</span></h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead >
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr>
+            <th class="text-primary bg-info"><strong>
+              < html><br>
+              < body><br><br>
+              < p>Bla bla bla< /p><br>
+              < script><br>
+              document.write(Date());<br>
+              < /script><br><br>
+              < p>Bla bla bla< /p><br>
+              < /body><br>
+              < /html></strong>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    
+        <br>
+        <h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+        <br>
+        <div class="">
+            <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemHTML4.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+        </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Grupo 8 <br><strong>Aplicaciones de Tecnologias Web</strong>.
+      </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/munter-bootstrap-one-page-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+        Tarea 1 - Segundo Parcial 
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/php-mail-form/validate.js"></script>
+  <script src="../lib/fancybox/fancybox.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

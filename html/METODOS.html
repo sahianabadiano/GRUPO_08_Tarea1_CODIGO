@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>METODOS DOM</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+ <link href="../img/ocho.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/fancybox/fancybox.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+  <link rel="prefetch" href="../img/zoom.png">
+
+  <!-- =======================================================
+    Template Name: Munter
+    Template URL: https://templatemag.com/munter-bootstrap-one-page-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body data-spy="scroll" data-offset="58" data-target="#navigation">
+
+  <!-- Fixed navbar -->
+  <div id="navigation" class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+          
+      </div>
+      <div class="navbar-collapse collapse" >
+        <ul class="nav navbar-nav ">
+         
+          <li class="active" style="padding-top: 4%;"><span><a href="../index.html"><i class="fa fa-home" style="font-size: 45px;"></i></a></span></li>
+          <li>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </li>
+          <li class="active dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown"  href="#">Métodos <b class="caret"></b></a>
+            <ul class="dropdown-menu" style="background-color: grey; border-radius: 5%;">
+              <li class="dropdown-item" ><a href="#about-us" class="smoothscroll">Interfaz de programación DOM</a></li>
+              <li class="dropdown-item" ><a href="#process" class="smoothscroll">Método getElementById</a></li>
+              <li class="dropdown-item" ><a href="#contact" class="smoothscroll">Ejemplo</a></li>
+            </ul>
+          </li>
+         </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+ <!-- === MAIN Background === -->
+  <div class="slide story" id="introduccion" data-slide="1">
+    <div class="container">
+      <div id="home-row-1" class="row clearfix">
+        <div class="row title-row">
+          <br>
+        <div class="col-12 font-thin"> <span class="font-semibold">JS HTML DOM: métodos HTML DOM</span> </div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-12 font-thin">Se trata de acciones que se pueden realizar en elementos HTML. <span class="font-semibold">y sus propiedades son valores que se pueden cambiar.</span></div>
+      </div>
+        <!-- /col-12 -->
+      </div>
+      <!-- /row -->
+      <div id="home-row-2" class="row clearfix">
+
+        <div class="col-12 col-sm-4">
+          <a href="#portfolio" class="smoothscroll navigation-slide-a"> </div> 
+
+        <div class="col-12 col-sm-4">
+          <a href="#about-us" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="../img/flecha.png" style="height: 80px; width: 80px;"></div></a>
+        </div>
+
+        <div class="col-12 col-sm-4">
+          <a href="#clients" class="smoothscroll navigation-slide-a"> 
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /slide1 -->
+
+
+   <!-- === Slide 2 === -->
+  <div class="slide story" id="about-us" data-slide="2">
+    <div class="container">
+      <section id="header">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="header-content-left">
+              <h1 class="display-6">La interfaz de programación DOM </h1>
+              <br>
+              <div class="row line-row">
+        		<div class="hr">&nbsp;&nbsp;</div>
+      			</div>
+      			<!-- /row -->
+              <br><br>
+              <h3 class="mt-5">Son las propiedades y métodos de cada objeto.</h3> 
+              <br>
+                    <div align="left">
+                    <li>Se puede acceder al DOM HTML con JavaScript y otros lenguajes de programación.</li>
+                    <li>En el DOM todos los elementos HTML se definen como objetos.</li>
+					<li>Una propiedad es un valor que se puede obtener o establecer.</li>
+					<li>Un método es una acción que se puede realizar.</li>
+
+                  </div>
+                  <br><br>
+              <a href="#process" class="btn btn-outline-secondary header-btn btn-lg mt-2">Leer Más</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="header-content-right">
+              <img src="../img/metod.png" style="width: 70%;margin-left: 30%; margin-top: 10%;"  class="thumbnail">
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </div>
+  <!-- /slide2 -->
+
+  <!-- === SLide 3 - Portfolio -->
+  <div class="slide story" id="process" data-slide="4">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">El método  <span class="font-semibold">getElementById</span></div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <br>
+       <table class="table table-bordered">
+            <th class="mb-0 blockquote text-center"><em><h4> getElementById ()</h4></em></th>
+      </table>
+      <h3 class="font-thin "> El getElementById  es el método utilizado para encontrar el elemento mediante su id.</h3>
+      <br><br>
+      <div class="row title-row">
+        <div class="col-12 font-thin">La propiedad  <span class="font-semibold"> innerHTML </span></div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <br><br>
+      <table class="table table-bordered">
+            <th class="mb-0 blockquote text-center"><em><h4> .innerHTML</h4></em></th>
+      </table>
+      <h3 class="font-thin "> La propiedad innerHTML nos permite obtener o reemplazar el contenido de elementos HTML.</h3>
+     
+		<!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /slide3 -->
+
+
+<!-- === Slide 6 / Contact === -->
+
+<div class="slide story" id="contact" data-slide="6">
+  <div class="container">
+     <div class="row title-row">
+        <div class="col-12 font-thin">Ejemplo getElementById ()</div>
+     </div>
+     <!-- /row -->
+     <div class="row line-row">
+       <div class="hr">&nbsp;</div>
+     </div>
+     <!-- /row -->
+
+       <h3 align="left" class="font-thin ">El siguiente ejemplo cambia el contenido del < p> elemento con  <span class="font-semibold">id="demo":</span> <span class="font-thin"></span></h3>
+
+      <table class="table  table-bordered table-striped ">
+        <thead >
+          <tr class="table-success">
+            <th scope="col">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr>
+            <th class="text-primary bg-info"><strong>
+             < html><br>
+			 < body><br>
+
+			< p id="demo">< /p><br><br>
+            < script><br>
+			document.getElementById("demo").innerHTML = "Hello World!";<br>
+            < /script><br><br>
+            < /body><br>
+            < /html></strong>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    
+      <!-- /row -->
+     	<br>
+     	<h3 align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al ejecutarlo</h3>
+     	<br>
+		<div class="">
+  			<iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemMetod.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+		</div>
+    </div>
+    <!-- /container -->
+   	
+  </div>
+
+     
+   
+<div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Grupo 8 <br><strong>Aplicaciones de Tecnologias Web</strong>.
+      </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/munter-bootstrap-one-page-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+        Tarea 1 - Segundo Parcial 
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/php-mail-form/validate.js"></script>
+  <script src="../lib/fancybox/fancybox.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
